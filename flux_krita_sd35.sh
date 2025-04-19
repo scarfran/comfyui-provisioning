@@ -1,5 +1,11 @@
 #!/bin/bash
 
+# Libera a porta 8188
+fuser -k 8188/tcp || true
+
+# Instala dependências do sistema
+apt update && apt install -y psmisc libgl1
+
 # Configuração inicial
 LOG_FILE="/workspace/provisioning.log"
 echo "Iniciando instalação em $(date)" > $LOG_FILE
