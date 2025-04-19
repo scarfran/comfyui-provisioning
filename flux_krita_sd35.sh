@@ -22,4 +22,5 @@ unzip main.zip && mv ComfyUI_KritaNodes-main ComfyUI_KritaNodes
 
 # Dependências extras
 pip install -r /workspace/ComfyUI/custom_nodes/FLUX-1/requirements.txt
+pip install ultralytics onnxruntime
 pip install ultralytics
